@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS CTS_EMPLOYEES; 
+
+/*CREATE TABLE CTS_EMPLOYEES (
+    id 			INT 			AUTO_INCREMENT	PRIMARY KEY,
+    firstname 	VARCHAR(250) 	NOT NULL,
+    middlename 	VARCHAR(250) 	NOT NULL,
+    lastname 	VARCHAR(250) 	NOT NULL,
+    doj 		DATE			DEFAULT NULL
+);*/
+
+CREATE TABLE CTS_EMPLOYEES (
+    id 			NUMBER (30)		AUTO_INCREMENT	PRIMARY KEY,
+    firstname 	VARCHAR(250) 	NOT NULL,
+    middlename 	VARCHAR(250) 	,
+    lastname 	VARCHAR(250) 	NOT NULL,
+    doj 		DATE			NOT NULL
+);
