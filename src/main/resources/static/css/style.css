@@ -1,0 +1,17 @@
+body {
+	
+}
+
+fieldset{
+	display: block;
+	margin: 2px;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #00d1b2;
+}
+
+legend {
+    color: #00d1b2;
+	text-align: center;
+}

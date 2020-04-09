@@ -1,8 +1,8 @@
 <%@ include file="../common/header.jsp"%>
 
-<div class="card bg-secondary text-white">
-	<div class="card-header">All Employees</div>
-	<div class="card-body">
+<div class="panel">
+	<div class="panel-heading">All Employees</div>
+	<div class="panel-block">
 		<div class="container">			
 			<%@ include file="detail.jsp" %>
 		</div>

@@ -1,11 +1,10 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	<ul class="navbar-nav">
-		<li class="nav-item"><a class="nav-link" href="all">All</a></li>
-		<li class="nav-item"><a class="nav-link" href="find">Find</a></li>
-		
-		<li class="nav-item"><a class="nav-link" href="delete">Delete</a></li>
-		<li class="nav-item"><a class="nav-link" href="update">Update</a></li>
-		
-		<li class="nav-item"><a class="nav-link" href="add">Add</a></li>
-	</ul>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+	<div class="navbar-brand">	
+		<a class="navbar-item" href="home">Home</a> 
+		<a class="navbar-item" href="all">All</a> 
+		<a class="navbar-item" href="find">Find</a> 
+		<a class="navbar-item" href="delete">Delete</a> 
+		<a class="navbar-item" href="update">Update</a> 
+		<a class="navbar-item" href="add">Add</a>
+	</div>
 </nav>

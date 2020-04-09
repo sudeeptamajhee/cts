@@ -23,10 +23,10 @@ import org.springframework.format.annotation.DateTimeFormat;
 		procedureName = "CTS_EMPLOYEE_PROC", 
 		resultClasses = Employee.class,
 		parameters={
-				@StoredProcedureParameter(mode=ParameterMode.IN, name="P_FIRST_NAME", type=String.class),
-				@StoredProcedureParameter(mode=ParameterMode.IN, name="P_MIDDLE_NAME", type=String.class),
-				@StoredProcedureParameter(mode=ParameterMode.IN, name="P_LAST_NAME", type=String.class),
-				@StoredProcedureParameter(mode=ParameterMode.REF_CURSOR, name="P_EMP_CUR", type=void.class)
+			@StoredProcedureParameter(mode=ParameterMode.IN, name="P_FIRST_NAME", type=String.class),
+			@StoredProcedureParameter(mode=ParameterMode.IN, name="P_MIDDLE_NAME", type=String.class),
+			@StoredProcedureParameter(mode=ParameterMode.IN, name="P_LAST_NAME", type=String.class),
+			@StoredProcedureParameter(mode=ParameterMode.REF_CURSOR, name="P_EMP_CUR", type=void.class)
 		})
 })
 public class Employee implements Serializable {
@@ -35,7 +35,7 @@ public class Employee implements Serializable {
 	@Id
 	@GeneratedValue
 	@Column(nullable=false, length=30)
-	private long id;
+	private Long id;
 	@Column(nullable=false, length=250)
 	private String firstname;
 	@Column(nullable=true, length=250)
@@ -57,7 +57,7 @@ public class Employee implements Serializable {
 		this.doj = doj;
 	}
 
-	public Employee(long id, String firstname, String middlename, String lastname, Date doj) {
+	public Employee(Long id, String firstname, String middlename, String lastname, Date doj) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -66,11 +66,11 @@ public class Employee implements Serializable {
 		this.doj = doj;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

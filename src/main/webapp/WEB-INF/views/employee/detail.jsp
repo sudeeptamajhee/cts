@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table is-hoverable is-fullwidth">
 	<thead>
 		<tr>
 			<th>#</th>
@@ -9,6 +9,11 @@
 		</tr>
 	</thead>
 	<tbody>
+		<c:if test="${detail.size() <= 0}">
+			<tr>
+				<td colspan="5"><strong>Error!</strong> No value present</td>
+			</tr>
+		</c:if>
 		<c:forEach items="${detail}" var="e">
 			<tr>
 				<td>${e.id}</td>
